@@ -21,13 +21,16 @@ body {
 /* Header */
 header {
   background-color: #ffffff;
+  /*set padding so it does not stick to the sides*/
   padding: 0 1rem;
+  /*fixing the position allows the nav bar to scroll along*/
   position: fixed;
   z-index: 99;
-  /*allows the header to cover the width of the screen*/
+  /*allows the header to cover the width of the screen (fill the width of screen)*/
   width: 100%;
-  /*give shadow between header and main content */
+  /*give shadow between header and main content - so it looks like it is layered ontop of the content*/
   box-shadow: 0 2px 2px#3a3a3a;
+  /*first value in box shawdow is horizontal offset, negative value offset to left, positive value offset to right, as the header is full width set at 100% we will set it as 'zero', next value is virtical offset - +ve val display shadow below element, -ve valu display ABOVE element*, small shadow set to 2px, how soft/hard the shadow will look, set 2px/*/
 }
 
 header a {
@@ -54,6 +57,19 @@ h1 {
 }
 .active {
   border-bottom: 1px solid #3a3a3a;
+}
+
+/*NavBar styles with dropdown toggle*/
+nav {
+  position: absolute;
+  background-color: #ffffff;
+  padding: 0 1rem;
+
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 2px #3a3a3a;
+  /*set display to none, so that only when clicked it will appear*/
+  display: none;
 }
 
 /* Main content*/
