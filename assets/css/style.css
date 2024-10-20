@@ -24,17 +24,43 @@ header {
   padding: 0 1rem;
   position: fixed;
   z-index: 99;
+  /*allows the header to cover the width of the screen*/
   width: 100%;
+  /*give shadow between header and main content */
   box-shadow: 0 2px 2px#3a3a3a;
 }
+
+header a {
+  text-decoration: none;
+  /*inherit color of body*/
+  color: inherit;
+}
+
+h1 {
+  font-family: "oswald", sans-serif;
+  text-transform: uppercase; /*allow to change casing in future if required*/
+  letter-spacing: 2px;
+  color: #252525;
+}
+/*id given to menu in the unordered list*/
+#menu {
+  font-size: 110%;
+  letter-spacing: 4px;
+  list-style-type: none;
+}
+/*applying space between the list in nav*/
+#menu > li {
+  margin-bottom: 1em;
+}
+.active {
+  border-bottom: 1px solid #3a3a3a;
+}
+
 /* Main content*/
 main {
   background-color: azure;
   /* make main element take up any surplus space to push footer down*/
   flex: 1 0 auto;
-}
-h1 {
-  font-family: "oswald", sans-serif;
 }
 
 /* Footer */
