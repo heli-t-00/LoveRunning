@@ -76,7 +76,7 @@ nav {
   top: 100%;
 }
 
-/**Nav toggle*/
+/*Nav toggle*/
 #nav-toggle:checked ~ nav {
   display: block;
 }
@@ -98,4 +98,25 @@ main {
 /* Footer */
 footer {
   background-color: cadetblue;
+}
+/*Media query: tablets and larger (768px plus) */
+@media screen and (min-width: 768px) {
+  /*Header */
+  nav {
+    display: block;
+    position: relative;
+    box-shadow: none;
+    width: fit-content;
+    padding-right: 1rem;
+  }
+
+  #menu {
+    display: flex;
+  }
+  #menu > li {
+    padding-left: 1rem;
+  }
+  .nav-toggle-lable {
+    display: none;
+  }
 }
