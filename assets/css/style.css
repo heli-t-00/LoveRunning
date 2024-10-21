@@ -20,13 +20,11 @@ body {
 
 /* Header */
 header {
-  background-color: #ffffff;
-  /*set padding so it does not stick to the sides*/
+  background-color: #ffffff; /*set padding so it does not stick to the sides of screen*/
   padding: 0 1rem;
   /*fixing the position allows the nav bar to scroll along*/
   position: fixed;
-  z-index: 99;
-  /*allows the header to cover the width of the screen (fill the width of screen)*/
+  z-index: 99; /*allows the header to cover the width of the screen (fill the width of screen)*/
   width: 100%;
   /*give shadow between header and main content - so it looks like it is layered ontop of the content*/
   box-shadow: 0 2px 2px#3a3a3a;
@@ -65,7 +63,7 @@ h1 {
 
 /*NavBar styles with dropdown toggle*/
 nav {
-  position: absolute;
+  position: absolute; /**/
   background-color: #ffffff;
   padding: 0 1rem;
   left: 0;
@@ -73,7 +71,7 @@ nav {
   box-shadow: 0 2px 2px #3a3a3a;
   /*set display to none, so that only when clicked it will appear*/
   display: none;
-  top: 100%;
+  top: 100%; /*start at bottom of parent property*/
 }
 
 /*Nav toggle*/
@@ -81,7 +79,7 @@ nav {
   display: block;
 }
 #nav-toggle {
-  display: none;
+  display: none; /*hides the check box*/
 }
 .nav-toggle-lable {
   font-size: 2rem;
@@ -101,7 +99,7 @@ footer {
 }
 /*Media query: tablets and larger (768px plus) */
 @media screen and (min-width: 768px) {
-  /*Header */
+  /*Header*/
   nav {
     display: block;
     position: relative;
@@ -109,24 +107,14 @@ footer {
     width: fit-content;
     padding-right: 1rem;
   }
-
   #menu {
     display: flex;
   }
   #menu > li {
     padding-left: 1rem;
   }
-  .nav-toggle-lable {
+
+  .nav-toggle-label {
     display: none;
-  }
-  #logo {
-    font-size: 280%;
-    line-height: 75px;
-    margin: 0 0.5rem;
-  }
-  /* main content */
-  main {
-    /* Push main content down to accommodate larger header */
-    margin-top: 79px;
   }
 }
