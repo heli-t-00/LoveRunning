@@ -109,6 +109,7 @@ main {
  color: #3a3a3a
 }
 
+
 /*Media query: tablets and larger (768px plus) */
 @media screen and (min-width: 768px) {
   /*Header*/
