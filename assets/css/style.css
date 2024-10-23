@@ -147,6 +147,24 @@ main {
   margin: 5px 0;
 
 }
+/*Add image for Reasons Section*/
+#circle-cover-bg {
+  height: 90vw;
+  width: 90vw;
+  
+  margin-bottom: 20px;
+  background: url(../images/reasons-image.webp) no-repeat center center /cover;
+  /*Makes the image a CIRCLE, changing a square image into an circle*/
+  border-radius: 50%;
+  max-width: 300px;
+  max-height: 300px;
+
+  }
+  #benefits-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
 /* Footer */
 
