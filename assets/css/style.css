@@ -91,6 +91,10 @@ nav {
   font-size: 2rem;
 }
 
+.nav-toggle-label i {
+  font-size: 2rem;
+}
+
 /* Main content*/
 main {
 
