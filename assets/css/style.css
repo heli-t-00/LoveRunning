@@ -25,6 +25,10 @@ h1, h2, h3 {
   color: #252525;
 }
 
+.hidden-heading {
+  display: none;
+}
+
 /* Header */
 header {
   background-color: #ffffff; /*set padding so it does not stick to the sides of screen*/
@@ -189,7 +193,7 @@ align-self: flex-end;
 /*Targets all the DIV inside the times id*/
 #times div {
   color:#fafafa;
-  background-color: rgba(0, 0, 0, 6); /*creates a black overlay which is transparent, last number gives transparancy*/
+  background-color: rgba(0, 0, 0, .6); /*creates a black overlay which is transparent, last number gives transparancy, the number is between 1-0*/
   padding: 15px;
   text-align: center;
   /* This will not wrap on screens of less than 400px wide.
@@ -201,8 +205,10 @@ align-self: flex-end;
 }
 
 #times h3 {
+  /*overrides the heading colour set in general styles*/
   color:#fafafa;
 }
+
 
 /* Footer */
 
