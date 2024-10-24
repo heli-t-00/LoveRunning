@@ -213,6 +213,14 @@ align-self: flex-end;
   color:#fafafa;
 }
 
+/*GALLERY PAGE*/
+#photos img {
+  width: 100%;
+  line-height: 1em;
+}
+#photos {
+  line-height: 0;
+}
 
 /* Footer */
 
