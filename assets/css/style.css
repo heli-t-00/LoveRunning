@@ -238,6 +238,13 @@ align-self: flex-end;
  color: #3a3a3a
 }
 
+/*Media query: large or landscape phones (576px ad up)*/
+@media screen and (min-width: 576px) {
+  #photos {
+    column-count: 2;
+    column-gap: 0;
+  }
+}
 
 /*Media query: tablets and larger (768px plus) */
 @media screen and (min-width: 768px) {
@@ -277,7 +284,7 @@ align-self: flex-end;
   right: 50px;
 }
 
-/*Reason sextion*/
+/*Reason section*/
 #benefits-physical,
 #benefits-mental {
   display: flex;
@@ -292,15 +299,23 @@ align-self: flex-end;
 
 #benefits-mental > div {
   text-align: end;
-  align-self: flex;
+  align-self: flex-end;
 }
-
+/*Gallery*/
+#photos {
+  column-count: 3;
+}
 }
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
   #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
   }
+
+  /*Gallery*/
+#photos {
+  column-count: 4;
+}
 }
 /* reason section - image for screens 1200 px plus*/ 
 @media screen and (min-width: 1200px) {
